@@ -4,12 +4,12 @@
   --moss: #1d6b45;
   --moss-bright: #248a58;
   --brass: #c4a46a;
-  --paper: #f4efe4;
-  --paper-2: #ebe4d4;
+  --paper: #ffffff;
+  --paper-2: #f7f7f5;
   --ink: #161814;
   --muted: #5c6358;
   --line: rgba(22, 24, 20, 0.12);
-  --white: #fbf8f1;
+  --white: #ffffff;
   --header-h: 84px;
 }
 
@@ -117,7 +117,7 @@ summary:focus-visible {
   border-bottom-color: transparent;
 }
 .siteHeader.isSolid {
-  background: rgba(244, 239, 228, 0.94);
+  background: rgba(255,255,255,.96);
   backdrop-filter: blur(16px);
   border-bottom-color: var(--line);
   box-shadow: 0 10px 30px rgba(16, 38, 28, 0.06);
@@ -324,12 +324,8 @@ summary:focus-visible {
 .quoteSection {
   scroll-margin-top: calc(var(--header-h) + 12px);
 }
-.section {
-  width: min(1280px, calc(100% - 8vw));
-  margin: 0 auto;
-  padding: 96px 0;
-}
-.sectionIntro { max-width: 720px; margin-bottom: 48px; }
+.section {\n  width: min(1280px, calc(100% - 8vw));\n  margin: 0 auto;\n  padding: 72px 0;\n}
+.sectionIntro { max-width: 720px; margin-bottom: 30px; }
 .sectionIntro.split {
   max-width: none;
   display: grid;
@@ -745,3 +741,24 @@ textarea { resize: vertical; }
   .enquiryTop { display: block; }
   .enquiryPrice { margin-top: 10px; }
 }
+
+body{background:#fff}
+.introMinimal{display:none}
+.serviceCard{border-color:#e9ecea;box-shadow:none}
+.serviceCard:hover{box-shadow:0 12px 28px rgba(16,38,28,.08)}
+.serviceBody p{font-size:15px;color:#5f6a64}
+.estimateFeature{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center;padding:72px 8vw;background:var(--forest);color:#fff}
+.estimateFeatureCopy h2{margin:0 0 16px;font-size:clamp(36px,5vw,60px)}
+.estimateFeatureCopy p{max-width:680px;color:rgba(255,255,255,.75);font-size:18px}
+.estimateFeatureCard{background:#fff;color:var(--ink);padding:28px}
+.estimateFeatureCard>span{display:block;text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--moss);font-weight:700}
+.estimateFeatureCard>strong{display:block;font-size:28px;margin:8px 0 18px}
+.estimateFeatureCard dl{margin:0}
+.estimateFeatureCard dl div{display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-top:1px solid #e7e9e7}
+.estimateFeatureCard dt{color:var(--muted)}
+.estimateFeatureCard dd{margin:0;font-weight:700}
+.heroOverlay{background:linear-gradient(180deg,rgba(10,24,18,.10) 0%,rgba(10,24,18,.14) 28%,rgba(10,24,18,.64) 74%,rgba(10,24,18,.84) 100%),linear-gradient(90deg,rgba(10,24,18,.45) 0%,rgba(10,24,18,.14) 56%,rgba(10,24,18,0) 100%)}
+.heroLead{max-width:560px}
+.finalCta{padding-top:64px;padding-bottom:64px}
+@media(max-width:980px){.estimateFeature{grid-template-columns:1fr;gap:28px}}
+@media(max-width:640px){.estimateFeature{padding:56px 20px}.section{padding:54px 0}.heroLead{font-size:17px}}
