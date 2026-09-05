@@ -324,7 +324,11 @@ summary:focus-visible {
 .quoteSection {
   scroll-margin-top: calc(var(--header-h) + 12px);
 }
-.section {\n  width: min(1280px, calc(100% - 8vw));\n  margin: 0 auto;\n  padding: 72px 0;\n}
+.section {
+  width: min(1280px, calc(100% - 8vw));
+  margin: 0 auto;
+  padding: 72px 0;
+}
 .sectionIntro { max-width: 720px; margin-bottom: 30px; }
 .sectionIntro.split {
   max-width: none;
