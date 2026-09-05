@@ -1,5 +1,6 @@
 import { Newsreader, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
+import "./premium-minimal.css";
 
 const display = Newsreader({
   subsets: ["latin"],
