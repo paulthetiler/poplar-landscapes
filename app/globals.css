@@ -862,3 +862,10 @@ body{background:#fff}
     margin-top:0;
   }
 }
+
+/* Isolated mobile hero correction PR */
+@media(max-width:640px){
+  .heroContent{
+    transform:translateY(-200px);
+  }
+}
