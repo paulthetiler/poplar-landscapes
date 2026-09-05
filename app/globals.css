@@ -835,3 +835,16 @@ body{background:#fff}
     background:rgba(0,0,0,.18);
   }
 }
+
+/* Lift mobile hero copy into the image */
+@media(max-width:640px){
+  .hero{
+    justify-content:flex-start;
+  }
+  .heroContent{
+    padding:clamp(220px,28svh,300px) 20px 24px;
+  }
+  .heroStats{
+    margin-top:auto;
+  }
+}
