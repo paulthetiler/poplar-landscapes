@@ -1,7 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import Link from "next/link";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const rates = {
   "Porcelain patio": 180,
@@ -48,10 +49,7 @@ export default function EstimatePage() {
 
   return (
     <main className="estimatePage">
-      <header className="siteHeader">
-        <div className="brand"><div className="leaf">◒</div><div><strong>POPLAR</strong><span>LANDSCAPES N.W. LTD</span></div></div>
-        <Link href="/">Back to homepage</Link>
-      </header>
+      <Header />
 
       <section className="estimateIntro">
         <div className="eyebrow green">Instant project estimate</div>
@@ -98,6 +96,7 @@ export default function EstimatePage() {
           <ul><li>Project type and approximate size</li><li>Site access and removal requirements</li><li>Drainage and steps</li><li>Indicative budget range</li><li>Customer details and postcode</li></ul>
         </aside>
       </section>
+      <Footer />
     </main>
   );
 }
