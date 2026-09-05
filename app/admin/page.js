@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function AdminPage() {
   const [items,setItems]=useState([]);
@@ -16,10 +17,7 @@ export default function AdminPage() {
 
   return (
     <main className="adminPage">
-      <header className="siteHeader">
-        <div className="brand"><div className="leaf">◒</div><div><strong>POPLAR</strong><span>LANDSCAPES N.W. LTD</span></div></div>
-        <Link href="/">View website</Link>
-      </header>
+      <Header />
       <section className="adminWrap">
         <div className="eyebrow green">Simple backend</div>
         <h1>Estimator enquiries</h1>
@@ -44,6 +42,7 @@ export default function AdminPage() {
           </div>
         )}
       </section>
+      <Footer />
     </main>
   );
 }
