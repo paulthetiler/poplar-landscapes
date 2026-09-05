@@ -52,6 +52,7 @@ h1, h2, h3, .brand strong {
   text-transform: uppercase;
 }
 .eyebrow.light { color: var(--brass); }
+.eyebrow.green,
 .eyebrow.dark { color: var(--moss); }
 
 .primaryButton,
@@ -104,6 +105,7 @@ summary:focus-visible {
   top: 0;
   z-index: 40;
   height: var(--header-h);
+  color: var(--ink);
   background: var(--paper);
   border-bottom: 1px solid var(--line);
   transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
@@ -222,7 +224,16 @@ summary:focus-visible {
   border-top: 1px solid var(--line);
   padding: 18px 4vw 28px;
 }
-.mobileNav.isOpen { display: block; }
+.mobileNav.isOpen {
+  display: block;
+  position: fixed;
+  top: var(--header-h);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 39;
+  overflow: auto;
+}
 .mobileNav nav {
   display: grid;
   gap: 4px;
@@ -324,7 +335,7 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 40px;
-  align-items: end;
+  align-items: flex-end;
 }
 .section h2,
 .processBand h2,
@@ -555,7 +566,7 @@ summary:focus-visible {
 .finalCta {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   gap: 40px;
   margin: 20px 0 0;
   padding: 88px 8vw;
@@ -711,6 +722,7 @@ textarea { resize: vertical; }
 @media (max-width: 640px) {
   :root { --header-h: 72px; }
   .headerInner { padding: 0 20px; }
+  .headerActions .navCta { display: none; }
   .brandCopy strong { font-size: 22px; }
   .hero { min-height: 100svh; }
   .heroOverlay {
