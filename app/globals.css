@@ -913,3 +913,27 @@ body{background:#fff}
   }
   .shimmerCard::after{display:none}
 }
+
+/* Lock mobile hero composition */
+@media(max-width:640px){
+  .hero{
+    position:relative;
+    justify-content:flex-end;
+  }
+  .heroMedia{
+    background-position:58% 72%;
+  }
+  .heroContent{
+    position:absolute;
+    top:112px;
+    left:0;
+    right:0;
+    width:100%;
+    max-width:none;
+    padding:0 20px;
+    transform:none !important;
+  }
+  .heroStats{
+    margin-top:auto;
+  }
+}
