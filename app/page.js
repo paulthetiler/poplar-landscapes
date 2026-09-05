@@ -1,19 +1,19 @@
 import Link from "next/link";
 
 const services = [
-  ["Patios & Paving","Porcelain, natural stone and block paving.","https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80"],
-  ["Resin Driveways","Clean, durable finishes with strong kerb appeal.","https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"],
-  ["Fencing & Decking","Practical boundaries and outdoor living spaces.","https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=80"],
-  ["Turfing & Lawns","Fresh turf, artificial grass and full preparation.","https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=900&q=80"],
-  ["Groundworks","Excavation, drainage and dependable groundwork.","https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80"],
-  ["Garden Design","Complete transformations built around your space.","https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=900&q=80"]
+  ["Patios & Paving","Porcelain, natural stone and block paving.","https://static.wixstatic.com/media/e47714_638949a03e904e63905996261a2b833a~mv2.jpg"],
+  ["Resin Driveways","Clean, durable finishes with strong kerb appeal.","https://static.wixstatic.com/media/e47714_5c766441156b4765ba2a2963848012f4~mv2.jpg"],
+  ["Fencing & Decking","Practical boundaries and outdoor living spaces.","https://static.wixstatic.com/media/e47714_6a90fa3aa9d442378b8bb3507be04170~mv2.jpg"],
+  ["Turfing & Lawns","Fresh turf, artificial grass and full preparation.","https://static.wixstatic.com/media/e47714_efc1cc7c86854e7791e1e9d16ba7df76~mv2.jpg"],
+  ["Groundworks","Excavation, drainage and dependable groundwork.","https://static.wixstatic.com/media/e47714_2759df60b47d46f9a0bb9e2d5ed76f20~mv2.jpg"],
+  ["Garden Design","Complete transformations built around your space.","https://static.wixstatic.com/media/6c3719_80ad0fccc1994a6e8c04830d7d931bf4~mv2.jpg"]
 ];
 
 export default function Home() {
   const projects = [
-    "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80",
-    "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1000&q=80",
-    "https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&fit=crop&w=1000&q=80"
+    "https://static.wixstatic.com/media/e47714_5c766441156b4765ba2a2963848012f4~mv2.jpg",
+    "https://static.wixstatic.com/media/e47714_638949a03e904e63905996261a2b833a~mv2.jpg",
+    "https://static.wixstatic.com/media/e47714_efc1cc7c86854e7791e1e9d16ba7df76~mv2.jpg"
   ];
 
   return (
