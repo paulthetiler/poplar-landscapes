@@ -848,3 +848,17 @@ body{background:#fff}
     margin-top:auto;
   }
 }
+
+/* Definitive mobile hero position */
+@media(max-width:640px){
+  .hero{
+    justify-content:flex-end;
+  }
+  .heroContent{
+    transform:translateY(-140px);
+    padding:0 20px 24px;
+  }
+  .heroStats{
+    margin-top:0;
+  }
+}
